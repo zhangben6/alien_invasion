@@ -1,3 +1,4 @@
+'''游戏大部分工作都是由本模块完成的'''
 import sys
 import pygame
 
