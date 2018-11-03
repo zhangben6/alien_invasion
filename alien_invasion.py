@@ -4,6 +4,7 @@ from settings import Settings
 # from pygame.locals import *
 from ship import Ship
 import get_functions as gf
+from pygame.sprit import Group
 
 def run_game():
     pygame.init()
@@ -13,6 +14,9 @@ def run_game():
     screen = pygame.display.set_mode((ai_settings.screen_width,ai_settings.screen_height),0,32)
 
     ship = Ship(ai_settings,screen)
+
+    # 创建一个用于存储子弹的编组
+    bullets = Group()
     pygame.display.set_caption("飞机大战")
     
 
